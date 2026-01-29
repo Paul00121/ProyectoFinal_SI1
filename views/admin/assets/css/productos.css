@@ -1,0 +1,197 @@
+/* ===============================
+   BODY / CONTENEDOR
+================================ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 25px 60px rgba(30, 64, 175, 0.15);
+}
+
+/* ===============================
+   TITULOS
+================================ */
+h2 {
+    color: #1e3a8a;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* ===============================
+   BOTONES SUPERIORES
+================================ */
+.container .btn-primary {
+    min-width: 160px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+}
+
+.container .btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+.container .btn-secondary {
+    min-width: 160px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    background: #64748b;
+    border: none;
+}
+
+.container .btn-secondary:hover {
+    background: #475569;
+}
+
+/* ===============================
+   FILTROS
+================================ */
+.search-box {
+    border-radius: 12px;
+    padding: 12px;
+    border: 2px solid #c7d2fe;
+}
+
+.search-box:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* ===============================
+   GRID PRODUCTOS
+================================ */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 30px;
+}
+
+/* ===============================
+   TARJETA PRODUCTO
+================================ */
+.product-card {
+    background: #ffffff;
+    border-radius: 18px;
+    border: 2px solid #dbeafe;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.18);
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    border-color: #2563eb;
+    box-shadow: 0 25px 60px rgba(37, 99, 235, 0.35);
+}
+
+/* ===============================
+   IMAGEN
+================================ */
+.product-image {
+    height: 190px;
+    background: linear-gradient(135deg, #eff6ff, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.no-image {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* ===============================
+   INFO
+================================ */
+.product-info {
+    padding: 18px;
+}
+
+.product-info h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1e293b;
+    min-height: 48px;
+}
+
+.category {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1d4ed8;
+}
+
+/* ===============================
+   BOTONES CARD
+================================ */
+.product-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn-editar,
+.btn-eliminar {
+    flex: 1;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* EDITAR */
+.btn-editar {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff;
+}
+
+.btn-editar:hover {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+}
+
+/* ELIMINAR */
+.btn-eliminar {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: #fff;
+}
+
+.btn-eliminar:hover {
+    background: linear-gradient(135deg, #b91c1c, #dc2626);
+}
+
+/* ===============================
+   SIN PRODUCTOS
+================================ */
+.no-products {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 18px;
+    color: #64748b;
+}

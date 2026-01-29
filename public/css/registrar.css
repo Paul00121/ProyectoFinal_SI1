@@ -1,0 +1,77 @@
+/* Fondo general: degradado verde-turquesa */
+body {
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Tarjeta del formulario: semi-transparente para efecto intermezclado */
+.register-card {
+    background: rgba(255, 255, 255, 0.95); /* mezcla con el fondo */
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(5px); /* efecto moderno */
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Título e icono */
+.register-card .fa-user-plus {
+    color: #16a085;
+}
+
+/* Botón de registro: degradado oscuro complementario */
+.btn-register {
+    background: linear-gradient(135deg, #0e6655 0%, #138d75 100%);
+    color: #fff;
+    border: none;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.btn-register:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Inputs del formulario */
+input.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    transition: all 0.3s;
+}
+
+input.form-control:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 8px rgba(26, 188, 156, 0.4);
+}
+
+/* Alertas */
+.alert {
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Enlaces */
+.register-card a {
+    color: #16a085;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-card a:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+hr {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}

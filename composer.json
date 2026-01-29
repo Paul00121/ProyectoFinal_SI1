@@ -1,0 +1,9 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^7.0",
+        "vlucas/phpdotenv": "^5.6",
+        "dompdf/dompdf": "^3.1",
+        "paypal/paypal-checkout-sdk": "1.0.2",
+        "phpoffice/phpspreadsheet": "^5.4"
+    }
+}

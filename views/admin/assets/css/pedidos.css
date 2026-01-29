@@ -1,0 +1,127 @@
+/* BODY Y CONTAINER */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TITULOS */
+h2 {
+    color: #0b132b;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #2c3e50; /* Azul marino */
+    padding-bottom: 10px;
+}
+
+/* BOTONES */
+.btn-primary, .btn-secondary, .btn-info {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+/* Botones principales */
+.btn-primary {
+    background: linear-gradient(135deg, #4a90e2, #2c3e50);
+    color: #fff;
+}
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2c3e50, #4a90e2);
+}
+
+/* Botón secundario */
+.btn-secondary {
+    background: #6c757d;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+/* Botón info (detalle) */
+.btn-info {
+    background: #2980b9;
+    color: #fff;
+}
+.btn-info:hover {
+    background: #1c5980;
+}
+
+/* FORMULARIOS DE FILTRO */
+form.row.g-2 {
+    margin-bottom: 25px;
+}
+
+form .form-control, form .form-select {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    transition: 0.3s;
+}
+
+form .form-control:focus, form .form-select:focus {
+    border-color: #2c3e50;
+    box-shadow: 0 0 5px rgba(44,62,80,0.3);
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+    vertical-align: middle;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table thead {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:hover {
+    background-color: #eaf1fb;
+}
+
+/* ESTADOS */
+.estado-pendiente { color: #f39c12; font-weight: 600; } /* naranja */
+.estado-pagado { color: #27ae60; font-weight: 600; } /* verde */
+.estado-cancelado { color: #d0021b; font-weight: 600; } /* rojo */
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .btn-primary, .btn-secondary, .btn-info {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

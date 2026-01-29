@@ -1,0 +1,77 @@
+/* Estilo para la página de enviar correo */
+body {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.recovery-card {
+    background: #ffffffcc; /* blanco semi-transparente */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding: 30px 25px;
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box; /* Asegura que padding no rompa la tarjeta */
+}
+
+.recovery-card i {
+    color: #0b132b;
+}
+
+.recovery-card h4 {
+    margin-bottom: 10px;
+    color: #0b132b;
+}
+
+.recovery-card p {
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.recovery-card input.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Importante para que no se salga */
+}
+
+.btn-recovery {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.btn-recovery:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#resend-info {
+    font-size: 0.85rem;
+    color: #555;
+    text-align: center;
+}
+
+.alert {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}

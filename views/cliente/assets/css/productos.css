@@ -1,0 +1,131 @@
+/* ===============================
+   GRID PRODUCTOS (FIJO Y SIMÉTRICO)
+================================ */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px);
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+/* ===============================
+   TARJETA PRODUCTO
+================================ */
+.product-card {
+    width: 260px;
+    height: 450px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 2px solid #dbeafe;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.15);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    border-color: #2563eb;
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.30);
+}
+
+/* ===============================
+   IMAGEN
+================================ */
+.product-image {
+    height: 180px;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.no-image {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* ===============================
+   INFO
+================================ */
+.product-info {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+    min-height: 40px;
+}
+
+.category {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1d4ed8;
+    margin-bottom: 6px;
+}
+
+/* ===============================
+   STOCK DISPONIBLE
+================================ */
+.stock {
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.stock.disponible { color: #16a34a; }
+.stock.agotado { color: #dc2626; }
+
+/* ===============================
+   BOTÓN
+================================ */
+.product-actions {
+    margin-top: auto;
+}
+
+.btn-add {
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 700;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #fff;
+    border: none;
+    transition: all 0.25s ease;
+}
+
+.btn-add:hover {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    transform: scale(1.05);
+}
+
+/* ===============================
+   SIN PRODUCTOS
+================================ */
+.no-products {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 18px;
+    color: #64748b;
+}

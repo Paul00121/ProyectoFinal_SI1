@@ -1,0 +1,171 @@
+/* ===============================
+   BODY / CONTENEDOR
+================================ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 25px 60px rgba(30, 64, 175, 0.15);
+}
+
+/* ===============================
+   TITULO
+================================ */
+.container h2 {
+    color: #1e3a8a;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/* ===============================
+   BOTONES SUPERIORES
+================================ */
+.btn-primary {
+    min-width: 190px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+.btn-secondary {
+    min-width: 160px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    background: #64748b;
+    border: none;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #475569;
+}
+
+/* ===============================
+   GRID DE USUARIOS
+================================ */
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* ===============================
+   TARJETA USUARIO
+================================ */
+.user-card {
+    background: linear-gradient(180deg, #f8faff, #ffffff);
+    border-radius: 18px;
+    padding: 22px;
+    border: 2px solid #dbeafe;
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.user-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(37, 99, 235, 0.25);
+    border-color: #2563eb;
+}
+
+/* ===============================
+   INFO USUARIO
+================================ */
+.user-card h3 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.user-card p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #475569;
+}
+
+.user-card .status {
+    margin-top: 8px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ===============================
+   ACCIONES
+================================ */
+.actions {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ===============================
+   BOTONES ACCIONES
+================================ */
+.btn-editar,
+.btn-eliminar,
+.btn-verificar {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+/* Editar */
+.btn-editar {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff;
+}
+.btn-editar:hover {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+}
+
+/* Eliminar */
+.btn-eliminar {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: #fff;
+}
+.btn-eliminar:hover {
+    background: linear-gradient(135deg, #b91c1c, #dc2626);
+}
+
+/* Verificar */
+.btn-verificar {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    color: #fff;
+}
+.btn-verificar:hover {
+    background: linear-gradient(135deg, #15803d, #16a34a);
+}
+
+/* ===============================
+   MENSAJE SIN USUARIOS
+================================ */
+.users-grid > p {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 18px;
+    color: #64748b;
+}

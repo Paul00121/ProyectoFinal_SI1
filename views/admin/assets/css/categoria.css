@@ -1,0 +1,148 @@
+/* ===============================
+   BODY / CONTENEDOR
+================================ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 25px 60px rgba(30, 64, 175, 0.15);
+}
+
+/* ===============================
+   TITULO
+================================ */
+h2 {
+    color: #1e3a8a;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* ===============================
+   BOTONES SUPERIORES
+================================ */
+.container .btn-primary {
+    min-width: 180px;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+}
+
+.container .btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+.container .btn-secondary {
+    min-width: 160px;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: 700;
+    background: #64748b;
+    border: none;
+}
+
+.container .btn-secondary:hover {
+    background: #475569;
+}
+
+/* ===============================
+   ALERTAS
+================================ */
+.alert {
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+/* ===============================
+   TABLA
+================================ */
+.table {
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
+}
+
+.table thead {
+    background: linear-gradient(135deg, #1e40af, #2563eb);
+    color: #fff;
+}
+
+.table thead th {
+    border: none;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.table tbody td {
+    padding: 14px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f1f5ff;
+}
+
+.table tbody tr:hover {
+    background-color: #e0e7ff;
+    transition: 0.2s;
+}
+
+/* ===============================
+   COLUMNA ACCIONES
+================================ */
+.table td:last-child {
+    text-align: center;
+    min-width: 180px;
+}
+
+/* ===============================
+   BOTONES ACCIONES
+================================ */
+.table .btn-warning {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 10px;
+}
+
+.table .btn-warning:hover {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+}
+
+.table .btn-danger {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    border: none;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 10px;
+}
+
+.table .btn-danger:hover {
+    background: linear-gradient(135deg, #b91c1c, #dc2626);
+}
+
+/* ===============================
+   SIN DATOS
+================================ */
+.container p {
+    font-size: 18px;
+    text-align: center;
+    color: #64748b;
+    margin-top: 30px;
+}
