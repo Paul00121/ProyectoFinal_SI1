@@ -16,10 +16,10 @@ $nombre = $_SESSION['usuario'];
         <h2>Tienda Deportiva</h2>
     </div>
     <nav>
-        <a href="/tienda_deportiva/views/cliente/index_cliente.php">Inicio</a>
-        <a href="/tienda_deportiva/views/cliente/producto/index.php">Productos</a>
-        <a href="/tienda_deportiva/views/cliente/crear_pedido/index.php">Crear pedido</a>
-        <a href="/tienda_deportiva/views/cliente/mis_pedidos/index.php">Mis pedidos</a>
-        <a href="/tienda_deportiva/views/auth/logout.php">Cerrar sesión</a>
+        <a href="../../views/cliente/index_cliente.php">Inicio</a>
+        <a href="../../views/cliente/producto/index.php">Productos</a>
+        <a href="../../views/cliente/crear_pedido/index.php">Crear pedido</a>
+        <a href="../../views/cliente/mis_pedidos/index.php">Mis pedidos</a>
+        <a href="../../views/auth/logout.php">Cerrar sesión</a>
     </nav>
 </header>
